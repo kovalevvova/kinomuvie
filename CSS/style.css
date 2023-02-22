@@ -29,6 +29,7 @@ body {
 
 .header__logo {
   font-size: 40px;
+  font-weight: 700;
   text-decoration: none;
   color: brown;
 }
@@ -119,4 +120,76 @@ body {
 
 .muvie__reiting--red {
   border: 2px solid red;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: 100;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: width 2s;
+  padding-top: 40px;
+}
+
+.modal--show {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal__card {
+  background-color: rgb(24, 22, 22);
+  max-width: 600px;
+  padding: 18px;
+  box-shadow: 0 0 20px 0 #000000;
+  color: aliceblue;
+  display: flex;
+  flex-direction: column;
+}
+
+.muvie__cover {
+  width: 100%;
+  height: 100%;
+}
+
+.modal__movie-backdrop {
+  width: 280px;
+  height: 400px;
+  margin: 0 0 auto;
+  align-self: center;
+}
+
+.modal__muvie-info {
+  margin-left: 20px;
+}
+
+.modal__muvie-release-year {
+  font-size: 14px;
+  color: orange;
+}
+
+.modal__muvie-site {
+  color: orange;
+}
+
+.modal__button-close {
+  padding: 5px;
+  margin: 10px;
+  align-self: center;
+  border-radius: 5px;
+  outline: 0;
+}
+
+ul li {
+  padding: 5px;
+}
+
+.stop-scrolling {
+  height: 100%;
+  overflow: hidden;
 }
